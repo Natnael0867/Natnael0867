@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NATNAEL WAGAW</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6f91f.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(120deg, #000000, #1a1a1a);
+      color: white;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 4rem;
+      color: white;
+      text-shadow: 0 0 15px red;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #111;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #eee;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff4040;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid red;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .contact-buttons a:hover {
+      background: #cc0000;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #eee;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #ff4040;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #111;
+      color: #666;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>NATNAEL WAGAW</h1>
+    <p>Cinematic Portfolio • Developer • Designer</p>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>A brief description of this project and what it does.</p>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>A second project, maybe something you're proud of!</p>
+      </div>
+      <div class="project">
+        <h3>Project Three</h3>
+        <p>A third one to round it out. Add links later if you want.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-buttons">
+      <a href="mailto:natnael@example.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Natnael Wagaw. All rights reserved.
+  </footer>
+</body>
+</html>
